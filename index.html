@@ -1,8 +1,96 @@
 <form method="post" action="https://kablewy-submissions.heideman.workers.dev/submit/d10cc1c8-5a06-4fc1-a357-d1a7eecc6aa0">
     <div class="rendered-form formbuilder-embedded-bootstrap">
-        <div class="formbuilder-text form-group field-first-name"><label for="first-name" class="formbuilder-text-label">First Name<span class="formbuilder-required">*</span></label><input type="text" class="form-control" name="first-name" id="first-name" required="required" aria-required="true"></div>
-        <div class="formbuilder-text form-group field-last-name"><label for="last-name" class="formbuilder-text-label">Last Name<span class="formbuilder-required">*</span></label><input type="text" class="form-control" name="last-name" id="last-name" required="required" aria-required="true"></div>
-        <div class="formbuilder-textarea form-group field-message"><label for="message" class="formbuilder-textarea-label">Message</label><textarea class="form-control" name="message" id="message"></textarea></div><input type="hidden" name="api_key" value="a904bb7e9f6212b10f87a35e9be98e1c" id="api_key">
-        <div class="formbuilder-button form-group field-submit"><button type="submit" class="form-control btn-primary btn" name="submit" style="primary" id="submit">Submit</button></div>
+
+        <!-- Name Fields -->
+        <div class="formbuilder-text form-group field-first-name">
+            <label for="first-name" class="formbuilder-text-label">First Name<span class="formbuilder-required">*</span></label>
+            <input type="text" class="form-control" name="first-name" id="first-name" required="required" aria-required="true">
+        </div>
+        <div class="formbuilder-text form-group field-last-name">
+            <label for="last-name" class="formbuilder-text-label">Last Name<span class="formbuilder-required">*</span></label>
+            <input type="text" class="form-control" name="last-name" id="last-name" required="required" aria-required="true">
+        </div>
+
+        <!-- Message Field -->
+        <div class="formbuilder-textarea form-group field-message">
+            <label for="message" class="formbuilder-textarea-label">Message</label>
+            <textarea class="form-control" name="message" id="message"></textarea>
+        </div>
+
+        <!-- Email Field -->
+        <div class="formbuilder-email form-group field-email">
+            <label for="email" class="formbuilder-email-label">Email<span class="formbuilder-required">*</span></label>
+            <input type="email" class="form-control" name="email" id="email" required="required" aria-required="true">
+        </div>
+
+        <!-- Phone Number Field -->
+        <div class="formbuilder-tel form-group field-phone">
+            <label for="phone" class="formbuilder-tel-label">Phone Number</label>
+            <input type="tel" class="form-control" name="phone" id="phone">
+        </div>
+
+        <!-- Date Picker -->
+        <div class="formbuilder-date form-group field-date">
+            <label for="date" class="formbuilder-date-label">Preferred Contact Date</label>
+            <input type="date" class="form-control" name="date" id="date">
+        </div>
+
+        <!-- Dropdown Field -->
+        <div class="formbuilder-select form-group field-options">
+            <label for="options" class="formbuilder-select-label">Choose an Option</label>
+            <select class="form-control" name="options" id="options">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="formbuilder-radio form-group field-gender">
+            <label class="formbuilder-radio-label">Gender</label>
+            <div>
+                <input type="radio" name="gender" value="male" id="gender-male">
+                <label for="gender-male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="female" id="gender-female">
+                <label for="gender-female">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" value="other" id="gender-other">
+                <label for="gender-other">Other</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="formbuilder-checkbox-group form-group field-hobbies">
+            <label class="formbuilder-checkbox-group-label">Hobbies</label>
+            <div>
+                <input type="checkbox" name="hobbies" value="reading" id="hobbies-reading">
+                <label for="hobbies-reading">Reading</label>
+            </div>
+            <div>
+                <input type="checkbox" name="hobbies" value="sports" id="hobbies-sports">
+                <label for="hobbies-sports">Sports</label>
+            </div>
+            <div>
+                <input type="checkbox" name="hobbies" value="traveling" id="hobbies-traveling">
+                <label for="hobbies-traveling">Traveling</label>
+            </div>
+        </div>
+
+        <!-- File Upload -->
+        <div class="formbuilder-file form-group field-file-upload">
+            <label for="file-upload" class="formbuilder-file-label">Upload a File</label>
+            <input type="file" class="form-control" name="file-upload" id="file-upload">
+        </div>
+
+        <!-- Hidden Field for API Key -->
+        <input type="hidden" name="api_key" value="a904bb7e9f6212b10f87a35e9be98e1c" id="api_key">
+
+        <!-- Submit Button -->
+        <div class="formbuilder-button form-group field-submit">
+            <button type="submit" class="form-control btn-primary btn" name="submit" id="submit">Submit</button>
+        </div>
     </div>
 </form>
